@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var bangun = prompt("masukan bangunan datar");
+      document.write("Bangun datar :", bangun);
+      if (bangun == "persegi panjang") {
+        var panjang = prompt("masukan panjangnya");
+        document.write("<br/>");
+        document.write("panjang :", panjang);
+        var lebar = prompt("masukan lebarnya");
+        document.write("<br/>");
+        document.write("lebar :", lebar);
+        var luas = panjang * lebar;
+        document.write("<br/>");
+        document.write("jadi luas persegi panjang adalah :", luas);
+      } else if (bangun == "jajargenjang") {
+        var alas = prompt("masukan alasnya");
+        document.write("<br/>");
+        document.write("Alas :", alas);
+        var tinggi = prompt("masukan tingginya");
+        document.write("<br/>");
+        document.write("tinggi :", tinggi);
+        var luas = alas * tinggi;
+        document.write("<br/>");
+        document.write("jadi luas jajargenjang adalah :", luas);
+      } else if (bangun == "segitiga") {
+        var alas = prompt("masukan alasnya");
+        document.write("<br/>");
+        document.write("Alas :", alas);
+        var tinggi = prompt("masukan tingginya");
+        document.write("<br/>");
+        document.write("tinggi :", tinggi);
+        var luas = 0.5 * alas * tinggi;
+        document.write("<br/>");
+        document.write("jadi luas Segitia adalah :", luas);
+      }
+    </script>
+  </body>
+</html>
