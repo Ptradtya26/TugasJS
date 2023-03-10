@@ -1,0 +1,47 @@
+<script>
+  let pegawai = "Putra Aditya";
+  let jabatan = "Manager";
+  let gajipokok = 0;
+  let status = "single";
+
+  //deklarasi tunjangan berupa tunjangan jabatan, tunjangan keluarga, dan bpjs
+  let tunjangan_jabatan = 0;
+  let bpjs = 0;
+  let tunjangan_keluarga = 0;
+
+  switch (jabatan) {
+    case "Manager":
+      gajipokok = 10000000;
+      break;
+    case "Asisten Manager":
+      gajipokok = 8000000;
+      break;
+    case "Staff":
+      gajipokok = 5000000;
+      break;
+    default:
+      gajipokok = 0;
+  }
+
+  //hitung tunjangan berupa tunjangan jabatan, tunjangan keluarga, dan bpjs
+  tunjangan_jabatan = 0.1 * gajipokok;
+  bpjs = 0.1 * gajipokok;
+
+  //hitung total pendapatan
+  let totalPendapatan = gajipokok + tunjangan_jabatan + bpjs;
+  document.write(
+    "Data pegawai" +
+      "<br> Nama :" +
+      pegawai +
+      "<br> Jabatan Anda : " +
+      jabatan +
+      "<br> Gaji pokok : Rp." +
+      gajipokok +
+      "<br> Tunjangan jabatan : Rp." +
+      tunjangan_jabatan +
+      "<br> BPJS : Rp." +
+      bpjs +
+      "<br> Total Pendapatan : Rp." +
+      totalPendapatan
+  );
+</script>
