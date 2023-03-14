@@ -52,17 +52,17 @@
   }
 
   document.write(`<table style="text-align: center; width: 100%;">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>Nilai</th>
-                <th>Grade</th>
-                <th>Predikat</th>
-                <th>Keterangan</th>
-            </tr>
-        </thead>
-        <tbody>`);
+          <thead>
+              <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>Nilai</th>
+                  <th>Grade</th>
+                  <th>Predikat</th>
+                  <th>Keterangan</th>
+              </tr>
+          </thead>
+          <tbody>`);
   for (let i = 0; i < person.length; i++) {
     let p = person[i];
     //Set grade A - E (menggunakan if multi kondisi)
@@ -77,16 +77,16 @@
     let ket = p.nilai >= 60 ? "Lulus" : "Tidak Lulus";
     let warna = Warna(ket);
     document.write(`
-            <tr bgcolor="${warna}">
-                <td>${i + 1}</td>
-                <td>${p.nama}</td>
-                <td>${p.nilai}</td>
-                <td>${grade}</td>
-                <td>${predikat}</td>
-                <td>${ket}</td>
-            </tr>
-        `);
+              <tr bgcolor="${warna}">
+                  <td>${i + 1}</td>
+                  <td>${p.nama}</td>
+                  <td>${p.nilai}</td>
+                  <td>${grade}</td>
+                  <td>${predikat}</td>
+                  <td>${ket}</td>
+              </tr>
+          `);
   }
   document.write(`</tbody>
-    </table>`);
+      </table>`);
 </script>
